@@ -33,7 +33,7 @@
 
 		3、通过  jquery.color.js  插件来使  $(this).animate({"background-color":"#2ea9df"});  达到缓动效果
         
-        4、优化DOM操作，主要是防抖和节流
+        	4、优化DOM操作，主要是防抖和节流
 ```
 
 ##### 	预览
