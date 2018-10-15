@@ -1,0 +1,487 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {             /*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;                /*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;            /*合并外边线*/
+}
+
+
+body {
+    /*font: 12px/150% Arial, Verdana, "\5b8b\4f53";    !*宋体，Unicode，统一码*!*/
+    font-family: "SimSun", "宋体";
+    font-size: 14px;
+    color: black;
+    /*background: #fff;*/
+    width: 1902px;
+    height: 7180px;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+/*a:hover {*/
+    /*color: #C81623;*/
+/*}*/
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1360px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+.text-w {
+    color: white;
+}
+.text-b {
+    color: black;
+}
+.text-e {
+    color: #b4b0b0;
+}
+.text-h {
+    color: #d5d5d5;
+}
+.fonts-w {
+    font-family: "Microsoft YaHei","微软雅黑";
+    font-weight: 400;
+}
+.fonts-s1 {
+    font-size: 52px;
+}
+.fonts-s2 {
+    font-size: 24px;
+}
+.fonts-s3 {
+    font-size: 22px;
+}
+.fonts-s4 {
+    font-size: 20px;
+}
+.fonts-s5 {
+    font-size: 14px;
+}
+.fonts-s6 {
+    font-size: 16px;
+}
+.fonts-s7 {
+    font-size: 35px;
+}
+.background-w {
+    background-color: white;
+}
+.background-b {
+    background-color: black;
+}
+.background-l {
+    background-color: #2ea9df;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none
+}
+.nav-roundRect {           /*圆类*/
+    display: inline-block;
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    line-height: 61px;
+}
+.button-roundRect {        /*圆角类*/
+    text-align: center;
+    border-radius: 20px;
+}
+.shupai {
+    width: 1.5em;
+    margin: 0 auto;
+}
+.buttonDiv {
+    cursor: pointer;
+}
+/*公共类结束*/
+
+
+
+
+
+.shade {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #273846;
+    z-index: -2;
+
+}
+.shadeBase {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1012px;
+    z-index: -1;
+    display: none;
+    background-image: url("../img/茶园.png");
+    background-attachment: fixed;
+}
+.milinLog {
+    position: fixed;
+    left: 95px;
+    top: 50px;
+}
+.loginbutton {
+    position: fixed;
+    left: 120px;
+    top: 250px;
+}
+.loginbutton-mide {
+    position: relative;
+    padding: 4px;
+    width: 37px;
+    height: 140px;
+}
+.loginbutton-mide-button {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 35px;
+    height: 70px;
+}
+.loginbutton-mide-button-ul {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.loginbutton-mide-button-ul li {
+    width: 22px;
+    height: 44px;
+    margin: 10px 10px 25px 8px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+.sidebar-roundRect {
+    text-align: center;
+    border-radius: 20px;
+    line-height: 42px;
+}
+.sidebar {
+    position: fixed;
+    right: 76px;
+    top: 50px;
+    text-align: center;
+}
+.sidebar-button {
+    width: 141px;
+    height: 45px;
+    line-height: 42px;
+}
+.sidebar-nav {
+    margin-top: 95px;
+}
+.sidebar-nav>ul>li {
+    margin: 41px 0px;
+}
+.jianTou {
+    margin-left: 42px;
+    line-height: 52px;
+    display: none;
+}
+
+/*milinMain-密林 开始*/
+.milinMain {
+    width: 100%;
+    height: 1012px;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+}
+/*.milinMain-mide {*/
+    /*position: absolute;*/
+    /*right: 63px;*/
+    /*left: 30px;*/
+    /*top: 155px;*/
+/*}*/
+.milinMain-Img-tan {
+    position: absolute;
+    top: 105px;
+    right: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 809px;
+    height: 781px;
+}
+.milinMain-Img {
+    margin: 50px 0px;
+}
+.milinMainTxt {
+    position: absolute;
+    top: 228px;
+    left: 30px;
+}
+.milinMainTxt-p1 {
+    position: absolute;
+    left: 0;
+    top: 300px;
+}
+.milinHua {
+    width: 1360px;
+    height: 767px;
+    margin: 0px auto;
+    position: relative;
+    margin-top: 350px;
+}
+.milinHua-Txt {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.milinHua-Txt2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+/*milinMain-密林 结束*/
+
+/*milinMain-茶 开始*/
+.milinMainTxt-cha {
+    position: absolute;
+    top: 240px;
+    right: 230px;
+    overflow: hidden;
+}
+.cha-txt {
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.cha-txt-smaill {
+    position: relative;
+    overflow: hidden;
+    margin:230px 40px 0px 0px;
+}
+.cha-txt-smaill span {
+    height: 10px;
+    display: inherit
+}
+.cha-button {
+    width: 55px;
+    height: 155px;
+    margin-top: 3px;
+}
+.cha-p {
+    position: absolute;
+    top: 660px;
+    left: 220px;
+}
+/*milinMain-茶 结束*/
+
+/*milinMain-花 开始*/
+.milinMain-Img-tan-hua {
+    position: absolute;
+    top: 27px;
+    right: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 808px;
+    height: 940px;
+}
+.hua-img {
+    margin: 100px 0px;
+}
+/*milinMain-花 结束*/
+
+/*milinMain-画 开始*/
+
+.huaH {
+    /*position: absolute;*/
+    margin-top: 104px;
+    margin-left: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 607px;
+    height: 806px;
+}
+.huaH-text {
+    margin-top: 104px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+.textimgYaMa {
+    margin-top: 200px;
+}
+.textimgLvMi {
+    margin-top: 250px;
+    margin-left: 50px;
+}
+.textimgRiQi {
+    margin-top: 280px;
+    margin-left: 30px;
+}
+.huaH-button {
+    position: absolute;
+    bottom: 160px;
+    left: 900px;
+}
+.huaH-button span {
+    height: 10px;
+    display: inherit;
+}
+/*milinMain-画 结束*/
+
+/*milinMain-印染 开始*/
+
+/*milinMain-印染 结束*/
+
+/*milinMain-纸雕 开始*/
+
+.milinMain-Img-tan-zhidiao {
+    position: absolute;
+    top: 36px;
+    left: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 655px;
+    height: 817px;
+}
+.zhidao-img {
+    margin: 62px 0px;
+}
+/*milinMain-纸雕 结束*/
+
+/*milinMain-页尾 开始*/
+.milinmain-footer {
+    margin-top: 200px;
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    text-align: center;
+}
+.footer-img {
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 30%;*/
+    /*transform:translateX(-50%);*/
+    /*-ms-transform:translateX(-50%); 	    !* IE 9 *!*/
+    /*-moz-transform:translateX(-50%); 	    !* Firefox *!*/
+    /*-webkit-transform:translateX(-50%);     !* Safari 和 Chrome *!*/
+    margin: 0 auto;
+}
+.footer-contact {
+    width: 320px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 290px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.erweima {
+}
+.footer-Text {
+    margin: 20px 80px;
+}
+.footer-Text p:first-child {
+    margin: 10px 20px;
+}
+.footer-contact>p {
+    margin: 80px 0px;
+    margin-left: 85px;
+    font-size: 12px;
+}
+/*milinMain-页尾 结束*/
